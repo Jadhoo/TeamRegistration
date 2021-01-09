@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <div class="form-div">
+        <form id="form">
+            <h1>Team Registration</h1>
+            <table>
+                <tr>
+                    <td><label for="teamName">Team Name</label></td>
+                    <td><input type="text" name="teamName" id="teamName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Id</label></td>
+                    <td><input type="email" name="email" id="email-id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="players">Team Players</label></td>
+                    <td>
+                        <textarea name="players" id="players" cols="20" rows="5" placeholder="Player 1,&#10Player 2,&#10Player3" required></textarea>
+                        <div id="error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="captian">Choose Captian</label></td>
+                    <td>
+                        <input list="players-datalist" name="captian" id="captian" required>
+                        <datalist id="players-datalist">
+
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="submit" value="Register"></td>
+                    <td><input class="btn" type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="team.js"></script>
+</body>
+</html>
